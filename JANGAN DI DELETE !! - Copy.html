@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style> 
+ 
+
+header {
+color:rgb(64, 168, 242);
+font-family: verdana;
+font-weight: bold ;
+
+
+}
+ 
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  height: auto;
+  width: auto;  
+  background-image: url("Bali.jpg");
+ background-repeat: no-repeat;
+ background-size: 1920px 820px;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 450px;
+  width: 100%;
+  border-radius: 7px;
+ background-color:aqua;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.container .registration{
+  display: none;
+}
+#check:checked ~ .registration{
+  display: block;
+}
+#check:checked ~ .login{
+  display: none;
+}
+#check{
+  display: none;
+}
+.container .form{
+  padding: 2rem;
+}
+.form header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+ .form input{
+   height: 60px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   outline: none;
+ }
+ .form input:focus{
+   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+ }
+.form a{
+  font-size: 16px;
+  color: rgb(131, 182, 245);
+  text-decoration: none;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+.form input.button{
+ color: rgb(220, 197, 217) ;
+  background-image: url("inair.jpg");
+  background-size :400px;
+  background-position-x: center;
+  background-position-y: -100px ;
+  background-repeat : no-repeat ;
+  font-size: 1.9rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form input.button:hover{
+  background-image: url("garudalanding.jpg");
+  background-size :400px ;
+  background-position-x: center;
+  background-position-y: -140px;
+  background-repeat : no-repeat ;
+  color: rgb(50, 37, 95) ;
+}
+.signup{
+  font-size: 17px;
+  text-align: center;
+}
+.signup label{
+  color: rgb(152, 152, 232);
+  cursor: pointer;
+}
+.signup label:hover{
+  text-decoration: underline;
+}
+
+</style>
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login WIFI Bandara
+      </header>
+      <form action="#">
+        <input type="text" placeholder="Masukan Kode WIFI">
+        <input type="password" placeholder="Masukan Nomor Terminal">
+        <a href="#">Bingung Password WIFI Dimana?</a>
+        <input type="button"class="button" value="Masuk">
+      </form>
+      <div class="signup">
+        <span class="signup">Mau Menjadi Staff Bandara?
+          <p></p>ayo Mumpung Masih Dibuka Nih!
+        <p></p> <label for="check">Ayo Sini Daftar!</label>
+        </span>
+      </div>
+    </div>
+    <div class="registration form">
+      <header>Daftar</header>
+      <form action="#">
+        <input type="text" placeholder="Masukan Nama Anda">
+        <input type="password" placeholder="Masukan NIM anda">
+        <input type="password" placeholder="Pastikan NIM anda Benar!">
+        <input type="button" class="button" value="daftar!
+      </form>
+      <div class="signup">
+        <span class="signup">Kami Akan Infokan Jika Anda Direkrut Ya!
+          <p></p>
+         <label for="check">Mau Wifi? Sini Pencet!</label>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
